@@ -44,6 +44,12 @@
         map: webmap,
         container: "viewDiv"
       });
+      // Challenge 4: Add shapefile as a feature layer
+      const featureLayer = new FeatureLayer({
+        url: "https://services.arcgis.com/LBbVDC0hKPAnLRpO/arcgis/rest/services/hotosm_fra_normandy_airports_polygons_shp/FeatureServer" // French airports polygon
+      });
+
+      map.add(featureLayer); //Add the feature layer to the map
     });
   </script>
 </body>
